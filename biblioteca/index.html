@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Biblioteca</title>
+<meta name="apple-mobile-web-app-title" content="Biblioteca">
+<link rel="apple-touch-icon" href="icona-180.png">
+<link rel="icon" type="image/png" sizes="64x64" href="icona-64.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icona-512.png">
+<meta name="theme-color" content="#c2410c">
+<script>
+  // Aggiunta alla schermata Home (indirizzo con «?apri»): si va subito all'app.
+  var APP = 'https://script.google.com/macros/s/AKfycby9sT3AXxDnNp8L6LWZEAMh7lWpiHu5ROEZqx2uqfwCbHe1jBOn4217EIVWvc6jECqc/exec';
+  if (/[?&]apri\b/.test(location.search)) location.replace(APP);
+  else history.replaceState(null, '', location.pathname + '?apri');
+</script>
+<style>
+  :root { --bg: #f6f5f2; --surface: #fff; --testo: #1f2328; --tenue: #5b6168; --bordo: #e3e0da; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16181b; --surface: #1f2226; --testo: #eceae6; --tenue: #a3a8ae; --bordo: #33373c; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--testo);
+    font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: flex; align-items: center; justify-content: center; padding: 24px 16px; }
+  main { width: 100%; max-width: 440px; text-align: center; }
+  h1 { font-size: 28px; margin: 14px 0 4px; }
+  .icona { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 6px 20px rgba(0,0,0,.15); }
+  .btn { display: inline-block; margin: 18px 0 8px; padding: 13px 28px; border-radius: 12px; font-weight: 600;
+    background: var(--accento); color: #fff; text-decoration: none; }
+  .scheda { margin-top: 22px; text-align: left; background: var(--surface); border: 1px solid var(--bordo);
+    border-radius: 14px; padding: 16px 18px; }
+  .scheda h2 { font-size: 15px; margin: 0 0 6px; color: var(--accento); }
+  .scheda p { margin: 0 0 12px; }
+  .scheda p:last-child { margin-bottom: 0; }
+  .tenue { color: var(--tenue); font-size: 14px; }
+  a { color: var(--accento); }
+
+  :root { --accento: #c2410c; }
+  @media (prefers-color-scheme: dark) { :root { --accento: #ea6a2f; } .btn { color: #111; } }
+</style>
+</head>
+<body>
+<main>
+  <img class="icona" src="icona-180.png" alt="">
+  <h1>Biblioteca</h1>
+  <a class="btn" href="https://script.google.com/macros/s/AKfycby9sT3AXxDnNp8L6LWZEAMh7lWpiHu5ROEZqx2uqfwCbHe1jBOn4217EIVWvc6jECqc/exec">Apri Biblioteca</a>
+  <div class="scheda">
+    <h2>Come app sull'iPhone</h2>
+    <p>In Safari, da questa pagina: tasto <b>Condividi</b> (il quadrato con la freccia) →
+      <b>Aggiungi alla schermata Home</b> → <b>Aggiungi</b>. Sulla schermata Home compare questa icona.</p>
+    <h2>Come app sul Mac</h2>
+    <p>In Safari, da questa pagina: menu <b>File</b> → <b>Aggiungi al Dock…</b> → <b>Aggiungi</b>.
+      La prima volta può chiedere di entrare con l'account Google.</p>
+    <p class="tenue">L'app si apre solo con l'account Google autorizzato. Questa pagina non contiene dati.</p>
+  </div>
+  <p class="tenue"><a href="../">Tutte le app</a></p>
+</main>
+</body>
+</html>
