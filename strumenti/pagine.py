@@ -1,4 +1,4 @@
-"""Scrive le pagine di avvio: una per app (con la sua icona) e quella iniziale con tutte e tre.
+"""Scrive le pagine di avvio: una per app (con la sua icona) e quella iniziale con tutte le app.
 
 Uso:  python3 strumenti/pagine.py
 Perché esistono: le app sono web app di Google Apps Script e vivono tutte su script.google.com, dove non si può
@@ -20,6 +20,8 @@ APP = [
      "https://script.google.com/macros/s/AKfycbxMgx_xTdtthyJe9KrdadNFj6Og7LTTerDSioZIp6JML3u_lRx8TLIRl2XHjDvf_mfB9w/exec"),
     ("contabilita", "Contabilità", "#3d5a80", "#8fb0d9", "🏠",
      "https://script.google.com/macros/s/AKfycbwAJio7woQirvidr26X9C37XtB7m9uU49J13WhWdP1Xv6lyC5-wXlOL8q0bdjclRB5o/exec"),
+    ("visualfinance", "VisualFinance", "#4b5694", "#a4acdf", "🌍",
+     "https://script.google.com/macros/s/AKfycbxRIxP-_Nq2EMBZPkCISCb7ZCnmBUdOyPvCQ6grkNSTTIFb5CEVgluct2GgN0CrDh2k/exec"),
 ]
 
 STILE = """
